@@ -10,14 +10,20 @@
     "sourceMap": true,
     "rootDirs": ["src", "test"],
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "src",
+    "moduleResolution": "node",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
+    "esModuleInterop": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/* "]
+    }
   },
   "include": ["src"]
 }
