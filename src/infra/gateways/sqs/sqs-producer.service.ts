@@ -11,7 +11,7 @@ export class SqsProducerService implements QueueProducer{
     private readonly sqsService: SqsService
   ) {}
 
-  async send<T>(input: SendMessage.Input<T>): Promise<void> {
+  async send<T>(input: SendMessage.Input<T>): Promise<SendMessage.Output> {
     try {
       this.logger.log("producing sqs message: ", input.messageBody);
       await this.sqsService.send<T>(
