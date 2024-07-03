@@ -21,8 +21,8 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@/*": ["*"],
-      "@/tests/*": ["../tests/* "]
+      "@/tests/*": ["../test/*"],
     }
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }
