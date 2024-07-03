@@ -9,7 +9,7 @@ const config = {
   coverageDirectory: "coverage",
   coverageProvider: "babel",
   moduleNameMapper: {
-    '@/test/(.+)': '<rootDir>/test/$1',
+    '@/tests/(.+)': '<rootDir>/test/$1',
     '@/(.+)': '<rootDir>/src/$1',
   },
   roots: [
